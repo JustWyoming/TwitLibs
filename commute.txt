@@ -1,0 +1,8 @@
+It was a (adjective), rainy Monday. Traffic was totally (adjective), and really (past tense verb) my vibe. (noun plural proper) was on the radio, adding to the (noun). After a (Verb Gerund) commute, I arrived at work to find my boss (verb ending in ing) a (noun). I guess it’s too late to call in (adjective).
+
+category:
+work - 1
+
+searchTerm: verb ending in ‘ing’
+
+It was a [[JJ]], rainy Monday. Traffic was totally [[JJ]], and really [[VBD]] my vibe. [[NNPS]] was on the radio, adding to the [[NN]]. After a [[VBG]] commute, I arrived at work to find my boss [[searchTerm]] a [[NN]]. I guess it’s too late to call in [[JJ]].

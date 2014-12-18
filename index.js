@@ -1,6 +1,7 @@
 
 var express = require('express');
 var bodyParser = require('body-parser');
+var db = require('./models/index.js')
 var session = require('express-session');
 var flash = require('connect-flash');
 var expressControllers = require('express-controller');
@@ -22,30 +23,52 @@ app.use(flash());
 
 //index routes//
 app.get("/", function(req, res){ 
-  res.render('index');
+  res.render('index',{template:false});
 })
 
-app.post("/hashtag", function(req,res){
-  //res.send(req.body.hash);
-	helpers.getTweetWords(req.body.hash,function(words){
-  var pos = helpers.doPos(words);
- console.log(libs);
-  //res.render('index', );
-	})
+app.post('/', function(req, res){
+ db.template.find({where: {category_id: req.body.libId}}).then(function(libTemplate){
+    helpers.doLib(libTemplate.content,req.body.hash,function(libbed) {
+      res.render('index',{template: libbed, libId: libTemplate.id,})
+    })   
+    
+  }) 
+
+})
+ //fame save routes
+ app.post('/fame', function(req, res){
+ db.save.create(req.body).then(function(data){
+        res.redirect('/fame/'+data.id);
+      })
+  
+     
+ })
+
+app.get("/fame", function(req, res){ 
+  db.save.findAll().done(function(error,data){
+    res.render('fame',{data:data});
+  })
+  
+})
+
+app.get("/fame/:id",function(req,res){
+  db.save.find(req.params.id).done(function(error,data){
+    var shareUrl = encodeURIComponent("http://"+req.headers.host+"/fame/"+data.id);
+    var picUrl = encodeURIComponent("http://"+req.headers.host+"/screengrab.png");
+    res.render('show', {content: data.user_twitlibs, share:shareUrl, pic: picUrl});
+  })
+  
 })
 
 
 // rules routes
-
 app.get("/rules", function(req, res){ 
   res.render('rules');
 })
 
-// hall of fame routes
 
-app.get("/fame", function(req, res){ 
-  res.render('fame');
-})
+
+
 
 //listen routes//
 app.listen(3000);

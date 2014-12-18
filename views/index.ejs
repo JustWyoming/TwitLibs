@@ -1,18 +1,65 @@
 <% include partials/header %>
 <div class="container">
-	<div class="row">
-	<div class="twitLib-container">
-	<h1>text</h1>
-	<form action='/hashtag' method="post">
-		<input type="text" name="hash" placeholder="please enter a hashtag">
-		<input type="submit" name="getTwit" value="Get TwitLib">
+
+	
+	<div class="row text-center">
+	
+	
+		<h2>Select a Twitlib Template:</h2>
+	<form class="getTwit" action='/' method="post">	
+		<select class="libId" name="libId" id="libId">
+  			<option value="1">Work</option>
+  			<option value="2">Family</option>
+  			<option value="3">Celebrity</option>
+  			<option value="4">Activity</option>
+  			<option value="5">Dream</option>
+  			<option value="6">Travel</option>
+  			<option value="7">Friend</option>
+		</select>
+	
+	<h3 id="twitSearch">Choose a *template searchTerm*</h3>
+	
+		<input class="hash" type="text" name="hash" placeholder="please enter a phrase">
+		<input class="hashbutton" type="submit" name="getTwit" value="Get TwitLib">
+		
+
 	</form>
 	
+
+	<div class="backgroundImg">
+	<% if( template){%>
+	<div class="row text-center">
+		<div class="twitBoard">
+			
+			<p><%=  template %></p>
+			
+		</div>
+		
 	</div>
-	<div class="templates">
+	</div><!-- end of backgroundimg div -->
 	</div>
-	</div>
-</div><!--end of index container div -->
+	
+
+	<% } %>
+		<div class="row text-center">
+		<% if(template){%>
+		<div class="socialSave text-center" style="display:inline-flex; margin-top: 10px;">
+				
+					
+					<form action="/fame" method="post">
+						<input type="hidden" name="template_id" value="<%=libId %>">
+						<input type="hidden" name="user_twitlibs" value="<%=template%>">
+						<button class="btn btn-default saveTwit" type="submit" name="saveTwit" aria-label="Save">
+						<span class="glyphicon glyphicon-floppy-disk" aria-hidden="true"></span>
+						</button>
+					</form>
+					
+				
+				
+			</div>
+			<% }%>
+			</div>
+<!--end of index container div in footer -->
 
 
 <% include partials/footer %>

@@ -1,0 +1,5 @@
+https://www.facebook.com/dialog/feed?app_id=848276658525684&link={{shareUrl}}&picture={{sharePic}}&name=DevDraft+2014&description={{shareTitle}}&redirect_uri={{shareRedirectUri}}
+https://twitter.com/share?url={{shareUrl}}&text={{shareTitle}}&hashtags={{shareHashtags}}
+https://plus.google.com/share?url={{shareUrl}}
+http://www.linkedin.com/shareArticle?url={{shareUrl}}&title={{shareTitle}}
+https://pinterest.com/pin/create/bookmarklet/?media={{sharePic}}&url={{shareUrl}}&is_video=false&description={{shareTitle}}

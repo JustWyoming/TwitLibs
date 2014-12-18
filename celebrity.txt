@@ -1,0 +1,11 @@
+My friend James is in love with (celebrity). Seriously, he’s (adjective) and probably needs to be (verb past part). Yesterday at (noun), he announced he’s been sending (adjective) to (celebrity) on the regular. It’s (adverb) affecting his relationship with his (noun), and (noun plural) are starting to talk.  
+
+
+
+category:
+
+celebrity - 3
+
+searchTerm: celebrity
+
+My friend James is in love with [[searchTerm]]. Seriously, he’s [[JJ]] and probably needs to be [[VBD]]. Yesterday at [[NN]], he announced he’s been sending [[NN]] on the regular. It’s totally affecting his relationship with [[NN]], and now [[NNPS]] are starting to talk. 

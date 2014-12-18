@@ -1,0 +1,11 @@
+Last night I had the (adj super) dream. I was in/at [[searchTerm]] with (noun). Everything seemed normal until (noun plural) started (verb gerund). People began to (noun) and suddenly a (noun) appeared out of (adjective). When I woke up I was (adj).
+
+
+
+category:
+
+dream - 5
+
+searchTerm: location
+
+Last night I had the [[JJS]] dream. I was in [[searchTerm]] with [[NN]]. Everything seemed normal until [[NNS]] started [[VBG]]. People began to [[NN]] and suddenly a [[NN]] appeared out of [[JJ]]. When I woke up I was [[JJ]].

@@ -1,9 +1,9 @@
 "use strict";
 
 module.exports = function(sequelize, DataTypes) {
-  var saved = sequelize.define("saved", {
+  var save = sequelize.define("save", {
     template_id: DataTypes.INTEGER,
-    user_twitlibs: DataTypes.STRING
+    user_twitlibs: DataTypes.TEXT
   }, {
     classMethods: {
       associate: function(models) {
@@ -12,5 +12,5 @@ module.exports = function(sequelize, DataTypes) {
     }
   });
 
-  return saved;
+  return save;
 };

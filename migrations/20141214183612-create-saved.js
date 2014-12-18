@@ -1,7 +1,7 @@
 "use strict";
 module.exports = {
   up: function(migration, DataTypes, done) {
-    migration.createTable("saveds", {
+    migration.createTable("saves", {
       id: {
         allowNull: false,
         autoIncrement: true,
@@ -12,7 +12,7 @@ module.exports = {
         type: DataTypes.INTEGER
       },
       user_twitlibs: {
-        type: DataTypes.STRING
+        type: DataTypes.TEXT
       },
       createdAt: {
         allowNull: false,
@@ -25,6 +25,6 @@ module.exports = {
     }).done(done);
   },
   down: function(migration, DataTypes, done) {
-    migration.dropTable("saveds").done(done);
+    migration.dropTable("saves").done(done);
   }
 };

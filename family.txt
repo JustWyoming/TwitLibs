@@ -1,0 +1,11 @@
+Last night was freaking (adjective). My (# family member) and I were (verb gerund) through a massive pile of (noun). Naturally things escalated quickly, and before long (noun plural) we were (verb gerund) all over the (adjective). This is why we can’t have anything (adjective).
+
+
+
+category:
+
+family - 2
+
+searchTerm: family member or sig other
+
+Last night was freaking [[JJ]]. My [[searchTerm]] and I were [[VBG]] through a massive pile of [[NN]]. Naturally things escalated quickly, and before long [[NNS]] we were climbing all over the [[JJ]]. This is why we can’t have anything [[JJ]].

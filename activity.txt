@@ -1,0 +1,11 @@
+[[searchTerm]] is incredible. The (noun) you get when you (verb base) (adjective) is unreal. It’s also (adverb), which makes it great for (verb gerund) with family and friends. Personally, I recommend trying (noun) for a (superlative adjective) experience.
+
+
+
+category:
+
+activity - 4
+
+searchTerm: activity
+
+[[searchTerm]] is incredible. The [[JJ]] you get when you [[VB]] [[NN]] is unreal. It’s [[RB]], which makes it great for [[VBG]] with family and friends. Personally, I recommend trying [[NN]] for [[JJS]] results.

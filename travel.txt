@@ -1,0 +1,11 @@
+My dad just bought a ticket for [[searchTerm]]. He’s the (adj super). He really thinks he’ll meet (noun proper plural) and party like (noun). He also thinks he’ll (verb) and (verb) until (adj). I don’t want to kill his hopes and dreams, but I think he’s more likely to find (noun).
+
+
+
+category:
+
+travel - 6
+
+searchTerm: country or state
+
+My dad just bought a ticket for [[searchTerm]]. He’s the [[JJS]]. He really thinks he’ll meet [[NNPS]] and party like [[NN]]. He also thinks he’ll [[VB]] and [[VB]] until [[JJ]]. I don’t want to kill his hopes and dreams, but I think he’s more likely to find [[NN]].

@@ -1,0 +1,191 @@
+body{
+	color:#283A40;
+	background-color:#C0D3D6;
+	font-family: 'Nixie One', cursive;
+
+}
+h1, h2, h3, h4 {
+	color: #54B1E9;
+	font-family: 'Permanent Marker', cursive;
+	font-weight: 400;
+}
+p{
+	font-size: 1.2em;
+}
+.page-header{
+	border-bottom: .18em solid #fff;
+}
+.logo{
+	background-image: url("/twitlibs-logo.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 152px;
+	width: 444px;
+	display:block;
+	margin: 0 auto;
+	
+}
+ol, li {
+	font-size: 1.02em;
+	
+}
+nav ul li {
+	border: none !important;
+	text-decoration: none;
+	text-transform: uppercase;		
+	font-size: 1.2em;
+	font-weight: bold;
+	
+	
+}
+.navbar-default{
+	border:none;
+}
+
+.navbar-default .navbar-nav>li>a {
+	color: #FFFFFF;
+}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+   color: #54B1E9;
+}
+a:link{
+	color: #54B1E9;
+	
+	padding: 5px;
+}
+
+a:visited{
+		color: #54B1E9;
+}
+
+a:hover{
+	color: #BFDAED;
+}
+.backgroundImg {
+	background-image: url("/lined.png"); 
+	background-repeat: no-repeat;
+	min-height: 400px;
+	margin-top: 20px;
+	background-position: center; 
+	display: block;
+
+}
+#socialSave {
+	display:inline-flex;
+	float:clear;
+}
+.navbar {
+	background-color: #C0D3D6;
+
+}
+.footer{
+	float:clear;
+	bottom: 0;
+	height: 50px;
+	background-color: #C0D3D6;
+	margin-top: 40px;
+	color: #ffffff;
+
+}
+.footer p{
+	font-size: 1.05em;
+	
+}
+.twitBoard{
+	margin: 60px auto;
+	width: 400px;
+	padding: 0 20px;
+}
+.twitBoard p{
+	font-family: 'Permanent Marker', cursive;
+	font-size: 1.4em;
+	line-height: 1.6em;
+
+}
+.libId{
+	width: 200px;
+	font-family: 'Nixie One', cursive;
+	color: #BFDAED;
+}
+.smallBoard{
+	background-image: url("/lined-sm.png"); 
+	background-repeat: no-repeat;
+	min-height: 300px;
+	margin-top: 20px;
+	background-position: center; 
+	display: block;
+	
+
+}
+
+.fa{
+	font-size: 1.2em;
+	width: 30px;
+	height: 20px;
+}
+.smFont {
+	font-family: 'Permanent Marker', cursive;
+	font-size: 1.3em;
+	line-height: .85em;
+	max-width: 250px;
+	text-align: center;
+	margin-left: 50px;
+	margin-top: 50px;
+
+}
+.smFont a{
+	color:#283A40;
+}
+.hash{
+	border-radius: 7px;
+	width: 200px;
+}
+.hashbutton{
+	width:100px;
+	border-radius: 7px;
+	background-color: #BFDAED;
+	color:#54B1E9;
+
+}
+.hashbutton:hover{
+	color:#fff;
+}
+
+@media only screen and (max-width: 990px){
+	.smallBoard {
+		display: block;
+		float: none;
+		margin: 0 auto;
+		clear: both;
+		width: 360px;
+	}
+	.smallBoard .smFont {
+		display: block;
+		padding-top: 50px;
+		margin: 0 auto;
+		clear: both;
+	}
+}
+
+@media only screen and (max-width: 500px){
+	.twitBoard{
+		width:340px;
+	}
+	.twitBoard p{
+
+		font-size: 1.2em;
+		line-height: 1.4em;
+
+	}
+	.logo{
+	background-image: url("/twitlibs-logo-sm.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 94px;
+	width: 275px;
+	display:block;
+	margin:0 auto;
+	
+}
+
+}
