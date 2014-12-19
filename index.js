@@ -23,13 +23,14 @@ app.use(flash());
 
 //index routes//
 app.get("/", function(req, res){ 
-  res.render('index',{template:false});
+  res.render('index',{template:false, selected: 1});
 })
 
 app.post('/', function(req, res){
  db.template.find({where: {category_id: req.body.libId}}).then(function(libTemplate){
     helpers.doLib(libTemplate.content,req.body.hash,function(libbed) {
-      res.render('index',{template: libbed, libId: libTemplate.id,})
+       var selected = req.body.libId
+      res.render('index',{template: libbed, libId: libTemplate.id, selected: selected})
     })   
     
   }) 

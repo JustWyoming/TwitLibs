@@ -8,12 +8,12 @@
 		<h2>Select a Twitlib Template:</h2>
 	<form class="getTwit" action='/' method="post">	
 		<select class="libId" name="libId" id="libId">
-  			<option value="1">Work</option>
-  			<option value="2">Family</option>
-  			<option value="3">Celebrity</option>
-  			<option value="4">Activity</option>
-  			<option value="5">Dream</option>
-  			<option value="6">Travel</option>
+  			<option value="1" <%= selected == 1 ? 'selected' : '' %>>Work</option>
+  			<option value="2" <%= selected == 2 ? 'selected' : '' %>>Family</option>
+  			<option value="3" <%= selected == 3 ? 'selected' : '' %>>Celebrity</option>
+  			<option value="4" <%= selected == 4 ? 'selected' : '' %>>Activity</option>
+  			<option value="5" <%= selected == 5 ? 'selected' : '' %>>Dream</option>
+  			<option value="6" <%= selected == 6 ? 'selected' : '' %>>Travel</option>
   			
 		</select>
 	
