@@ -4,8 +4,13 @@ body{
 	font-family: 'Nixie One', cursive;
 
 }
-h1, h2, h3, h4 {
+h1, h2, h4 {
 	color: #54B1E9;
+	font-family: 'Permanent Marker', cursive;
+	font-weight: 400;
+}
+h3 {
+	color: #fff;
 	font-family: 'Permanent Marker', cursive;
 	font-weight: 400;
 }
